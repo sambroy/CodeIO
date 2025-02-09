@@ -1,16 +1,67 @@
 
 
-CODEI/O: Condensing Reasoning Patterns via Code Input-Output Prediction
-----
+# CODEI/O: Condensing Reasoning Patterns via Code Input-Output Prediction
 
+<p align="center">
+        📑 <a  href="https://huggingface.co/papers/xxxx.xxxxx" target="_blank">Paper</a> &nbsp&nbsp  </a> | &nbsp&nbsp 🌐 <a href="https://codeio.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/collections/hkust-nlp/xxxxx" target="_blank"> Released Resources</a> &nbsp&nbsp 
+<br>
+
+<p align="center">
+    <img src="figures/overview.png" type="image/jpg"/>
+<p>
+
+## Introduction
 PLACEHOLDER
 
-Data Processing
----
-This is the code for codeio data processing pipeline.
-For training, you can use any popular repos like llama-factory.
+## Resources
 
-#### Step 0: Prepare the Environment
+**Data**
+We release the PythonEdu part of our dataset.
+
+|Data|Link|
+|-|-|
+|PythonEdu|[Link](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning)|
+
+
+
+**Models**
+<table>
+    <tr>
+        <th rowspan="2">模型/数据</th>
+        <th colspan="2">CodeI/O</th>
+        <th colspan="2">CodeI/O++</th>
+    </tr>
+    <tr>
+        <th>Stage 1</th>
+        <th>Stage 2</th>
+        <th>Stage 1</th>
+        <th>Stage 2</th>
+    </tr>
+    <tr>
+        <td>Qwen 2.5 7B Coder</td>
+        <td style="background-color: #e6f3ff; text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+    </tr>
+    <tr>
+        <td>LLaMA 3.1 8B</td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+    </tr>
+    <tr>
+        <td>DeepSeek v2 Lite Coder</td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+    </tr>
+</table>
+
+## Setup
+
 We provide both the `requirements.txt` and `environment.yaml`. You can choose either way to setup the environment.
 ```
 conda create -n codeio_exec python 3.11
@@ -20,8 +71,13 @@ pip install -r requirements.txt
 or
 ```
 conda env create -f environment.yaml --name codeio_exec
+conda activate codeio_exec
 ```
-Please note that our setup does not guarantee the execution of all types of Python code; you may need to update the environment to meet your personal requirements.
+Please note that our setup does not guarantee the execution of all types of Python code; you may need to update the environment to meet your personal requirements when processing different code files.
+
+## Data Processing
+
+We provide a complete guide for you to build data for CodeI/O on a toy dataset.
 
 #### Step 1: Convert raw code files into the unified format.
 
@@ -118,3 +174,10 @@ python ./src/assemble_codeio_demo.py \
 --output_file codeio_demo_final.jsonl
 ```
 By doing so, you can get data `data/codeio_demo_final.jsonl` with the same format as in our [huggingface dataset](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning).
+
+## Citation
+```
+a bibtex
+```
+
+## 
