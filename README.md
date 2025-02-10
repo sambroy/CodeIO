@@ -3,22 +3,41 @@
 # CODEI/O: Condensing Reasoning Patterns via Code Input-Output Prediction
 
 <p align="center">
-        📑 <a  href="https://huggingface.co/papers/xxxx.xxxxx" target="_blank">Paper</a> &nbsp&nbsp  </a> | &nbsp&nbsp 🌐 <a href="https://codeio.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/collections/hkust-nlp/xxxxx" target="_blank"> Released Resources</a> &nbsp&nbsp 
+        📑 <a  href="https://huggingface.co/papers/xxxx.xxxxx" target="_blank">Paper</a> &nbsp&nbsp  </a> | &nbsp&nbsp 🌐 <a href="https://codeio.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/collections/hkust-nlp/codei-o-67a978e28fd926b56a4f55a2" target="_blank"> Released Resources</a> &nbsp&nbsp 
 <br>
 
 <p align="center">
     <img src="figures/overview.png" type="image/jpg"/>
 <p>
 
+## Table of contents
+
+- [Introduction](#Introduction)
+- [Released Resources](#Released-Resources)
+  - [Dataset](#Dataset)
+  - [Models](#Models)
+- [Get Started](#Get-Started)
+  - [Setup](#Setup)
+  - [Data Processing](#Data-Processing)
+  - [Training](#Training)
+- [Citation](#Citation)
+- [Acknowledgement](#Acknowledgement)
+
 ## Introduction
-PLACEHOLDER
+CodeI/O is a novel approach that transforms code-based reasoning patterns into natural language formats to enhance Large Language Models' reasoning capabilities. Unlike traditional methods focusing on specific skills, our approach systematically extracts universal reasoning primitives while maintaining procedural rigor, enabling better performance across various reasoning tasks.
 
-## Resources
+**Key Features & Contributions**
+- 🔄 Universal Transformation: Converts diverse code patterns into natural language Chain-of-Thought rationales
+- 🧠 Syntax-Decoupled: Decouples reasoning from code syntax while preserving logical structure
+- 📊 Multi-Task Enhancement: Improves performance across symbolic, scientific, logic, mathematical, commonsense and code reasoning
+- ✨ Fully-Verifiable: Supports precise prediction verification through cached ground-truth matching or code re-execution
+- 🚀 Advanced Iteration: Enhanced version (CodeI/O++) with multi-turn revision for better accuracy
 
-**Data**
-We release the PythonEdu part of our dataset.
+## Released Resources
 
-|Data|Link|
+**Dataset**
+
+|Dataset|Link|
 |-|-|
 |PythonEdu|[Link](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning)|
 
@@ -27,7 +46,7 @@ We release the PythonEdu part of our dataset.
 **Models**
 <table>
     <tr>
-        <th rowspan="2">模型/数据</th>
+        <th rowspan="2">Base Model / Training</th>
         <th colspan="2">CodeI/O</th>
         <th colspan="2">CodeI/O++</th>
     </tr>
@@ -39,28 +58,32 @@ We release the PythonEdu part of our dataset.
     </tr>
     <tr>
         <td>Qwen 2.5 7B Coder</td>
-        <td style="background-color: #e6f3ff; text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <!-- <td style="background-color: #e6f3ff; text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_stage1">Link</a></td> -->
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_stage1">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_pp_stage1">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_pp">Link</a></td>
     </tr>
     <tr>
         <td>LLaMA 3.1 8B</td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_stage1">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_pp_stage1">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_pp">Link</a></td>
     </tr>
     <tr>
         <td>DeepSeek v2 Lite Coder</td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://example.com">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_stage1">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_pp_stage1">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_pp">Link</a></td>
     </tr>
 </table>
 
-## Setup
+
+## Get Started
+
+### Setup
 
 We provide both the `requirements.txt` and `environment.yaml`. You can choose either way to setup the environment.
 ```
@@ -75,9 +98,9 @@ conda activate codeio_exec
 ```
 Please note that our setup does not guarantee the execution of all types of Python code; you may need to update the environment to meet your personal requirements when processing different code files.
 
-## Data Processing
+### Data Processing
 
-We provide a complete guide for you to build data for CodeI/O on a toy dataset.
+We provide a complete guide for you to build data for CodeI/O on a toy dataset. After all these steps you can get a dataset with the same format as in our [huggingface dataset](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning).
 
 #### Step 1: Convert raw code files into the unified format.
 
@@ -87,7 +110,7 @@ python ./src/build_transform_msg.py \
 --raw_code_file data/rawcode_1k.jsonl \
 --raw_code_msg_file data/rawcode_1k_msg.jsonl
 ```
-##### Step 1.2: Call API
+##### Step 1.2: Inference
 ```
 python ./src/batched_api_inference.py \
 --input data/rawcode_1k_msg.jsonl \
@@ -101,6 +124,8 @@ python ./src/batched_api_inference.py \
 ```
 You can also use GPT series models to do this transformation step, since recently the DeepSeek API is under heavy pressure. For example, set `--model` as `gpt-4o-mini-2024-07-18​` and change `--key` accordingly.
 You may find some the requests failed, it's OK and we just skip them.
+
+*Note that we only provide the code to inference with OpenAI-style APIs. However, it is also 100\% feasible to deploy other open-source models and inference locally via frameworks like [vllm](https://github.com/vllm-project/vllm) or [sglang](https://github.com/sgl-project/sglang). Please refer to their official websites for more details.
 #### Step 2: Parse & Generate I/O Pairs
 ```
 python ./src/parse_gen_ios.py \
@@ -175,9 +200,14 @@ python ./src/assemble_codeio_demo.py \
 ```
 By doing so, you can get data `data/codeio_demo_final.jsonl` with the same format as in our [huggingface dataset](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning).
 
+### Training
+You can use any popular training framework to train your model like [llama-factory](https://github.com/hiyouga/LLaMA-Factory). 
+
 ## Citation
+If you find this work helpful, please kindly cite as:
 ```
-a bibtex
+TBD
 ```
 
-## 
+## Acknowledgement
+We thank Fan Zhou, Wei Liu and Yiheng Xu for their valuable feedback and suggestions! 🤗🤗🤗
