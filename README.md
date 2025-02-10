@@ -3,7 +3,7 @@
 # CodeI/O: Condensing Reasoning Patterns via Code Input-Output Prediction
 
 <p align="center">
-        📑 <a  href="https://huggingface.co/papers/xxxx.xxxxx" target="_blank">Paper</a> &nbsp&nbsp  </a> | &nbsp&nbsp 🌐 <a href="https://codeio.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/collections/hkust-nlp/codei-o-67a978e28fd926b56a4f55a2" target="_blank"> Released Resources</a> &nbsp&nbsp 
+    📑 <a href="https://huggingface.co/papers/xxxx.xxxxx" target="_blank">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="https://codeio.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/collections/hkust-nlp/codei-o-67a978e28fd926b56a4f55a2" target="_blank">Released Resources</a> &nbsp&nbsp | &nbsp&nbsp 📦 <a href="https://github.com/hkust-nlp/CodeIO" target="_blank">Repo</a>  
 <br>
 
 <p align="center">
