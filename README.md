@@ -102,6 +102,8 @@ Please note that our setup does not guarantee the execution of all types of Pyth
 
 We provide a complete guide for you to build data for CodeI/O on a toy dataset. After all these steps you can get a dataset with the same format as in our [huggingface dataset](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning).
 
+All intermediate results will be stored under `./data`, but we have also provided a set of pre-processed files under `./processed_data`.
+
 #### Step 1: Convert raw code files into the unified format.
 
 ##### Step 1.1: Build Messages
