@@ -35,7 +35,7 @@ CodeI/O is a novel approach that transforms code-based reasoning patterns into n
 
 ## Released Resources
 
-**Dataset**
+#### Dataset
 
 |Dataset|Link|
 |-|-|
@@ -43,7 +43,7 @@ CodeI/O is a novel approach that transforms code-based reasoning patterns into n
 
 
 
-**Models**
+#### Models
 <table>
     <tr>
         <th rowspan="2">Base Model / Training</th>
