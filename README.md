@@ -39,7 +39,9 @@ CodeI/O is a novel approach that transforms code-based reasoning patterns into n
 
 |Dataset|Link|
 |-|-|
-|PythonEdu|[Link](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning)|
+|CodeI/O-PythonEdu-Reasoning|[🤗](https://huggingface.co/datasets/hkust-nlp/CodeIO-Pyedu-Reasoning)|
+
+Due to our collaborators' compliance requirements, we only release the PythonEdu-Reasoning subset of the CodeI/O(++) dataset.
 
 
 
@@ -59,24 +61,24 @@ CodeI/O is a novel approach that transforms code-based reasoning patterns into n
     <tr>
         <td>Qwen 2.5 7B Coder</td>
         <!-- <td style="background-color: #e6f3ff; text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_stage1">Link</a></td> -->
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_stage1">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_pp_stage1">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_pp">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_pp_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/qwen2.5-7b-coder_codeio_pp">🤗</a></td>
     </tr>
     <tr>
         <td>LLaMA 3.1 8B</td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_stage1">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_pp_stage1">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_pp">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_pp_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/llama3.1-8b_codeio_pp">🤗</a></td>
     </tr>
     <tr>
         <td>DeepSeek v2 Lite Coder</td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_stage1">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_pp_stage1">Link</a></td>
-        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_pp">Link</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_pp_stage1">🤗</a></td>
+        <td style="text-align: center; vertical-align: middle;"><a href="https://huggingface.co/hkust-nlp/dsv2-lite-coder_codeio_pp">🤗</a></td>
     </tr>
 </table>
 
