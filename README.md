@@ -3,7 +3,7 @@
 # CodeI/O: Condensing Reasoning Patterns via Code Input-Output Prediction
 
 <p align="center">
-    📑 <a href="https://huggingface.co/papers/xxxx.xxxxx" target="_blank">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="https://codei-o.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/collections/hkust-nlp/codei-o-67a978e28fd926b56a4f55a2" target="_blank">Released Resources</a> &nbsp&nbsp | &nbsp&nbsp 📦 <a href="https://github.com/hkust-nlp/CodeIO" target="_blank">Repo</a>  
+    📑 <a href="https://huggingface.co/papers/2502.07316" target="_blank">Paper</a> &nbsp&nbsp | &nbsp&nbsp 🌐 <a href="https://codei-o.github.io/" target="_blank">Project Page</a> &nbsp&nbsp | &nbsp&nbsp 💾 <a href="https://huggingface.co/collections/hkust-nlp/codei-o-67a978e28fd926b56a4f55a2" target="_blank">Released Resources</a> &nbsp&nbsp | &nbsp&nbsp 📦 <a href="https://github.com/hkust-nlp/CodeIO" target="_blank">Repo</a>  
 <br>
 
 <p align="center">
@@ -210,7 +210,12 @@ You can use any popular training framework to train your model like [llama-facto
 ## Citation
 If you find this work helpful, please kindly cite as:
 ```
-TBD
+@article{li2025codeio,
+  title={CodeI/O: Condensing Reasoning Patterns via Code Input-Output Prediction},
+  author={Li, Junlong and Guo, Daya and Yang, Dejian and Xu, Runxin and Wu, Yu and He, Junxian},
+  journal={arXiv preprint arXiv:2502.07316},
+  year={2025}
+}
 ```
 
 ## Acknowledgement
