@@ -129,6 +129,10 @@ jsoniolist = json.dumps(iolist)
 print("[JSON IOS START]" + jsoniolist + "[JSON IOS END]")  
 """
 
+# eulerlib_prefix = "import eulerlib\nfrom eulerlib import is_prime, gcd, lcm, factorial, nCr"
+eulerlib_prefix = "from eulerlib import *"
+
+
 def process_one_item(res):
     
     maincode = eulerlib_prefix+'\n\n'+res['maincode']
@@ -190,6 +194,8 @@ def process_one_item(res):
         return None
 
 def process_item(item):
+    # import pdb; pdb.set_trace()
+    print(f"item = {item}")
     res = resolve_output(item['output'])
     if res is None:
         return None
@@ -243,9 +249,13 @@ if __name__ == "__main__":
         exdt = read_jsonl(ofn)
         exindex = set([x['meta']['msgidx'] for x in exdt])
     else:
+        print(f"got here")
         exindex = set()
 
     dt = [x for x in dt if x['index'] not in exindex]
+
+    print(f"len(dt): {len(dt)}")
+    print(f"dt = {dt}") 
 
     print("Skip existing:", len(exindex))
 
@@ -260,6 +270,7 @@ if __name__ == "__main__":
             if result is not None:
                 adt.append(result)
                 goodcount+=1
+            print(f"len(adt): {len(adt)}")
             if len(adt) >= 100:
                 write_jsonl(adt, ofn,"a")
                 adt = []
